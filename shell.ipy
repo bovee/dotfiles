@@ -1,0 +1,14 @@
+# to be placed in ~/.ipython/profile_default/startup
+import os
+
+os.environ['PATH'] = '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/roderick/.cargo/bin:/Applications/Postgres.app/Contents/Versions/9.4/bin'
+
+%config TerminalInteractiveShell.term_title = False
+%config TerminalIPythonApp.display_banner = False
+%config InteractiveShell.colors = 'linux'
+
+%rehashx
+%alias vless /usr/share/vim/vim73/macros/less.sh
+
+from __future__ import division, print_function, unicode_literals
+
